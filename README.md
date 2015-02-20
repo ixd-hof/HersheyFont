@@ -3,30 +3,28 @@
 
 We developed this Library for drawing typography on drawbots in mind. The basic problem with common typography on drawbots is the filling pattern. Otherwise only the outlines are drawn.
 
-HersheyFont
-
-HersheyFont Library Features:
+#HersheyFont Library Features:
 1. Drawing line fonts in Processing
 2. Create PShape from string
 3. Export SVG via P8gGraphicsSVG
 
-Source Code:
+#Source Code:
 https://github.com/ixd-hof/HersheyFont
 
-Usage:
-1. Import library
+#Usage:
+*1. Import library
 import de.ixdhof.hershey.*;
 
-2. Initialize and load font
+*2. Initialize and load font
 HersheyFont hf = new HersheyFont(this, "cursive.jhf");
 
-3. Set text size
+*3. Set text size
 hf.textSize(100);
 
-4. Draw text
+*4. Draw text
 hf.text("Hello", 0, 0);
 
-5. Create and draw PShape
+*5. Create and draw PShape
 PShape ps = hf.getShape("Processing");
 shape(ps);
 
