@@ -13,20 +13,20 @@ https://github.com/ixd-hof/HersheyFont
 
 #Usage:
 *1. Import library
-    import de.ixdhof.hershey.*;
+>    import de.ixdhof.hershey.*;
 
 *2. Initialize and load font
-    HersheyFont hf = new HersheyFont(this, "cursive.jhf");
+>    HersheyFont hf = new HersheyFont(this, "cursive.jhf");
 
 *3. Set text size
-    hf.textSize(100);
+>    hf.textSize(100);
 
 *4. Draw text
-    hf.text("Hello", 0, 0);
+>    hf.text("Hello", 0, 0);
 
 *5. Create and draw PShape
-    PShape ps = hf.getShape("Processing");
-    shape(ps);
+>    PShape ps = hf.getShape("Processing");
+>    shape(ps);
 
 ##Example:
 
