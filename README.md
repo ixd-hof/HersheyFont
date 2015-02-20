@@ -12,19 +12,19 @@ We developed this Library for drawing typography on drawbots in mind. The basic 
 https://github.com/ixd-hof/HersheyFont
 
 #Usage:
-*1. Import library
+1. Import library
 >    import de.ixdhof.hershey.*;
 
-*2. Initialize and load font
+2. Initialize and load font
 >    HersheyFont hf = new HersheyFont(this, "cursive.jhf");
 
-*3. Set text size
+3. Set text size
 >    hf.textSize(100);
 
-*4. Draw text
+4. Draw text
 >    hf.text("Hello", 0, 0);
 
-*5. Create and draw PShape
+5. Create and draw PShape
 >    PShape ps = hf.getShape("Processing");
 >    shape(ps);
 
