@@ -3,12 +3,12 @@
 
 We developed this Library for drawing typography on drawbots in mind. The basic problem with common typography on drawbots is the filling pattern. Otherwise only the outlines are drawn.
 
-#HersheyFont Library Features:
+##HersheyFont Library Features:
 1. Drawing line fonts in Processing
 2. Create PShape from string
 3. Export SVG via P8gGraphicsSVG
 
-#Source Code:
+##Source Code:
 https://github.com/ixd-hof/HersheyFont
 
 #Usage:
