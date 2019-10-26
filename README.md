@@ -1,34 +1,30 @@
-    "The Hershey fonts are a collection of vector fonts developed circa 1967 by Dr. A. V. Hershey at the Naval Weapons Laboratory.[1][2] The fonts are publicly available and have few restrictions.[3] Vector fonts are easily scaled and rotated in two or three dimensions; consequently the Hershey fonts have been widely used in computer graphics and computer-aided design programs."
-    https://en.wikipedia.org/wiki/Hershey_font
+>"The Hershey fonts are a collection of vector fonts developed circa 1967 by Dr. A. V. Hershey at the Naval Weapons Laboratory.[1][2] The fonts are publicly available and have few restrictions.[3] Vector fonts are easily scaled and rotated in two or three dimensions; consequently the Hershey fonts have been widely used in computer graphics and computer-aided design programs." (https://en.wikipedia.org/wiki/Hershey_font)
 
 We developed this Library for drawing typography on drawbots in mind. The basic problem with common typography on drawbots is the filling pattern. Otherwise only the outlines are drawn.
 
-##HersheyFont Library Features:
+## HersheyFont Library Features:  
 1. Drawing line fonts in Processing
 2. Create PShape from string
 3. Export SVG via P8gGraphicsSVG
 
-##Source Code:
-https://github.com/ixd-hof/HersheyFont
-
-#Usage:
+## Usage:
 1. Import library
->    import de.ixdhof.hershey.*;
+`import de.ixdhof.hershey.*;`
 
 2. Initialize and load font
->    HersheyFont hf = new HersheyFont(this, "cursive.jhf");
+`HersheyFont hf = new HersheyFont(this, "cursive.jhf");`
 
 3. Set text size
->    hf.textSize(100);
+`hf.textSize(100);`
 
 4. Draw text
->    hf.text("Hello", 0, 0);
+`hf.text("Hello", 0, 0);`
 
 5. Create and draw PShape
->    PShape ps = hf.getShape("Processing");
->    shape(ps);
+`PShape ps = hf.getShape("Processing");`
+`shape(ps);`
 
-##Example:
+## Example:
 
     import de.ixdhof.hershey.*;
 
