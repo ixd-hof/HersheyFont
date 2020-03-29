@@ -120,17 +120,17 @@ public class HersheyFont {
 
 	      for (int i=0; i<h_vertices.length; i++)
 	      {
-	        shc.beginShape(parent.LINES);
-	        for (int j=2; j<h_vertices[i].length (); j+=2)
+	        shc.beginShape();
+	        for (int j=0; j<h_vertices[i].length (); j+=2)
 	        {
-	          float hx0 = pos_x + hershey2coord(h_vertices[i].charAt(j-2)) * hfactor;
-	          float hy0 = hershey2coord(h_vertices[i].charAt(j-1)) * hfactor;
-	          shc.vertex(hx0, hy0);
+	          //float hx0 = pos_x + hershey2coord(h_vertices[i].charAt(j-2)) * hfactor;
+	          //float hy0 = hershey2coord(h_vertices[i].charAt(j-1)) * hfactor;
+	          //shc.vertex(hx0, hy0);
 	          float hx1 = pos_x + hershey2coord(h_vertices[i].charAt(j)) * hfactor;
 	          float hy1 = hershey2coord(h_vertices[i].charAt(j+1)) * hfactor;
 	          shc.vertex(hx1, hy1);
 	        }
-	        shc.endShape(parent.CLOSE);
+	        shc.endShape();
 	      }
 	      pos_x += h_width + 5 * hfactor;
 	      sh.addChild(shc);
@@ -183,17 +183,17 @@ public class HersheyFont {
 
 	    for (int i=0; i<h_vertices.length; i++)
 	    {
-	    	parent.beginShape(parent.LINES);
-	      for (int j=2; j<h_vertices[i].length (); j+=2)
+	    	parent.beginShape();
+	      for (int j=0; j<h_vertices[i].length (); j+=2)
 	      {
-	        float hx0 = hershey2coord(h_vertices[i].charAt(j-2)) * hfactor;
-	        float hy0 = hershey2coord(h_vertices[i].charAt(j-1)) * hfactor;
-	        parent.vertex(hx0, hy0);
+	        //float hx0 = hershey2coord(h_vertices[i].charAt(j-2)) * hfactor;
+	        //float hy0 = hershey2coord(h_vertices[i].charAt(j-1)) * hfactor;
+	        //parent.vertex(hx0, hy0);
 	        float hx1 = hershey2coord(h_vertices[i].charAt(j)) * hfactor;
 	        float hy1 = hershey2coord(h_vertices[i].charAt(j+1)) * hfactor;
 	        parent.vertex(hx1, hy1);
 	      }
-	      parent.endShape(parent.CLOSE);
+	      parent.endShape();
 	    }
 	    parent.translate(h_width + 5 * hfactor, 0);
 	  }
